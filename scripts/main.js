@@ -21,23 +21,20 @@ for(let k = 0; k < arr.length; k++){
 
     if(arr[k][2] > 30){
         document.write('Кандидат <strong>' + arr[k][1] + '</strong> Очень стар <br>');
-    }else{
-        if(arr[k][2] < 18){
+    }else if(arr[k][2] < 18){
             document.write('Кандидат <strong>' + arr[k][1] + '</strong> Очень молод <br>');
-        }else{
-            if(arr[k][3] == false){
+        }else if(arr[k][3] == false){
                 document.write('Кандидат <strong>' + arr[k][1] + '</strong> Не имеет высшего образования <br>');
             }
-            else{
-                if(arr[k][4] == false){
+            else if(arr[k][4] == false){
                     document.write('Кандидат <strong>' + arr[k][1] + '</strong> Не имеет опыта работы <br>');
                 }
                 else{
                     document.write('<br><br> <strong> Кандидат на работу найден: </strong> ' + arr[k][1] + '<br> Инфорормация о нем из поля  "О себе:": ' + arr[k][5]);
                 }
-            }
-        }
-    }
+            
+        
+    
 }                                                 
 
 

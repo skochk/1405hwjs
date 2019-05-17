@@ -3,7 +3,7 @@ console.log("номер кандидата, имя, возраст, наличи
 var arr = [
 [1,'Hena', 23, false, false, 'хочу работать'],
 [2,'Vitalii Albertovich', 54, true, false,'я дедушка'],
-[3, 'Stasik', 11, false, true, 'я виталик из 5б'],
+[3, 'Stasik', 11, false, true, 'я стасик из 5б'],
 [4, 'Petro', 19, false, true,'Возьмите на работу'],
 [5, 'Boris', 29, true, true, 'Я борис']
 ];
@@ -20,7 +20,7 @@ document.write('Отбор кандидатов кампутаром: <br>')
 for(let k = 0; k < arr.length; k++){
 
     if(arr[k][2] > 30){
-        document.write('Кандидат <strong>' + arr[k][1] + '</strong> Очень старый <br>');
+        document.write('Кандидат <strong>' + arr[k][1] + '</strong> Очень стар <br>');
     }else{
         if(arr[k][2] < 18){
             document.write('Кандидат <strong>' + arr[k][1] + '</strong> Очень молод <br>');
@@ -38,8 +38,7 @@ for(let k = 0; k < arr.length; k++){
             }
         }
     }
-    
-    
-
-
 }                                                 
+
+
+document.write('<br><br> Определение типа данных для [1][1]: ' + typeof arr[1][1]);
